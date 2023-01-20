@@ -20,10 +20,26 @@ public class Test {
         System.out.println((int)'a');
 
         // how to take input from user
-        Scanner s = new Scanner(System.in);
+       Scanner s = new Scanner(System.in);
         System.out.println("Enter an Integer number :");
         int number = s.nextInt();
         System.out.println("Entered number is :  " +number);
+
+        // how to find product of n number
+        int n =6;
+        int prod =1;
+        for(int i=1;i<=n;i++){
+            prod = prod*i;
+        }
+        System.out.println(prod);
+
+
+        int aa =2;
+        aa++;
+        int bb=2;
+        ++bb;
+        System.out.println(aa);
+        System.out.println(bb);
 
     }
 }
