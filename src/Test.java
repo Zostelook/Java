@@ -13,15 +13,15 @@ public class Test {
 
         }
 
-        //how to make multiplication table of an integer number
+        //how to write a factorial value of an integer number
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number :");
         int num = sc.nextInt();
 
-        int i;
-        for(i=1;i<=10;i++){
-            System.out.println(num*i);
+        int facto=1;
+        for(int i=1;i<=num;i++){
+            facto = facto*i;
         }
-
+        System.out.println(facto);
     }
 }
