@@ -1,6 +1,7 @@
 import java.util.*;
 public class Main {
 
+    static int i =0;
     Main(){
         System.out.println("This is constructor of Main class");
     }
@@ -17,7 +18,7 @@ public class Main {
 
 
    static void printOddEven(int n){
-        for(int i=1;i<=n;i++)
+        for( i=1;i<=n;i++)
         {
             if(i%2==0)
                 System.out.print("Even ");
@@ -27,9 +28,22 @@ public class Main {
         }
     }
     static void printStringChbyCh(String name){
-       for(int i=0;i<=name.length()-1;i++){
-           System.out.println(name.charAt(i));
+       for( i=0;i<=name.length()-1;i++){
+           System.out.print(name.charAt(i));
        }
+    }
+
+    static void reveserString(String str){
+        for( i=str.length()-1; i!=-1;i--){
+            System.out.println(str.charAt(i));
+        }
+    }
+
+    // how we can print ASCII value of any character
+    static void print_ASCII_Value(char firstSymbol,char second){
+        for( i= (int)firstSymbol;i<=(int)second;i++){
+            System.out.println(i);
+        }
     }
     public static void main(String[] args) {
 
@@ -48,6 +62,11 @@ public class Main {
 
        */
 
+      reveserString("Infinite");
+      print_ASCII_Value('a','z');
 
+
+      // by the help of this you can directly print ASCII value
+      System.out.println((int)'z');
     }
 }
