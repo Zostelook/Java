@@ -5,7 +5,7 @@ public class Main {
         {
             if(i%2==0)
                 System.out.print("Even ");
-            else{
+            if(i%2!=0){
                 System.out.print("odd ");
             }
         }
