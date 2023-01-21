@@ -42,7 +42,7 @@ public class Main {
     // how we can print ASCII value of any character
     static void print_ASCII_Value(char firstSymbol,char second){
         for( i= (int)firstSymbol;i<=(int)second;i++){
-            System.out.println(i);
+            System.out.println("The ASCII value of "+(char)i+" " +i);
         }
     }
     public static void main(String[] args) {
@@ -63,10 +63,30 @@ public class Main {
        */
 
       reveserString("Infinite");
-      print_ASCII_Value('a','z');
+      print_ASCII_Value('1','`');
 
 
       // by the help of this you can directly print ASCII value
       System.out.println((int)'z');
+
+
+       // when array is String then output of this would be 51
+
+      String nptel[]={"1","2","3","4","5","6"};
+      System.out.println(nptel[nptel.length-2]+nptel[0]);
+
+
+         // when array is character it will print ASCII value of 5 is 53 and 1 has 49 so it will print 102
+        char nptelch[]={'1','2','3','4','5','6'};
+        System.out.println(nptel[nptel.length-2]+nptel[0]);
+
+
+
+        int nptelIn []={1,2,3,4,5,6};
+        System.out.println(nptel[nptel.length-2]+nptel[0]);
+
+
+        System.out.print("*\n* *\n* * *");
+
     }
 }
