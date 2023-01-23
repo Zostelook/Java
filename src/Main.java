@@ -2,13 +2,10 @@ import java.util.*;
 public class Main {
 
 
- static void printAstrisksInTrianglurShap(int row,int col){
-     for(int i=1; i<=row; i++){
-         for(int j=1; j<=4-i; j++){
-             System.out.print("  ");
-         }
-         for(int j=1; j<=i; j++){
-             System.out.print(" *");
+ static void printAstrisksInTrianglurShap(){
+     for(int i=1; i<=5; i++){
+         for(int j =1; j<=i; j++){
+             System.out.print("*");
          }
          System.out.println();
      }
@@ -20,7 +17,21 @@ public class Main {
     public static void main(String[] args) {
 
 
-     printAstrisksInTrianglurShap(4,4);
+     printAstrisksInTrianglurShap();
+
+    // System.exit(0);    // it will terminate the program forcefully
+
+     System.out.println("this is scond");
+
+
+        int count =0;  // it will count how many time my loop has been executed
+     int n=6;
+     while(n>0){
+         System.out.println("while");
+         n--;
+         count++;
+     }
+     System.out.println(count);
 
     }
 }
