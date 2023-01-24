@@ -1,15 +1,26 @@
-import java.util.*;
 public class Main {
 
+    static  int []Array = {2,3,4,5,6,7,8};
+   static int  size =0;
 
- static void printAstrisksInTrianglurShap(){
-     for(int i=1; i<=5; i++){
-         for(int j =1; j<=i; j++){
-             System.out.print("*");
-         }
-         System.out.println();
-     }
- }
+
+    static void reveseArray(int [] Array, int start, int end){
+        int temp;
+        while (start<end){
+            temp =Array[start];
+            Array[start] = Array[end];
+            Array[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    static void printArray(int [] Array , int size){
+        for(int i=0; i<size; i++){
+            System.out.print(Array[i]+" ");
+        }
+        System.out.println();
+    }
 
 
 
@@ -17,21 +28,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-     printAstrisksInTrianglurShap();
 
-    // System.exit(0);    // it will terminate the program forcefully
+        printArray(Array,7);
 
-     System.out.println("this is scond");
-
-
-        int count =0;  // it will count how many time my loop has been executed
-     int n=6;
-     while(n>0){
-         System.out.println("while");
-         n--;
-         count++;
-     }
-     System.out.println(count);
+        reveseArray(Array,0,6);
+        System.out.println("Print Reverse Aarry :");
+        printArray(Array,7);
 
     }
+
 }
