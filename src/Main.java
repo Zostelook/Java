@@ -1,7 +1,7 @@
 public class Main {
 
 
-     int x;
+   static   int x;
      //   x=10;       we can't initialize like this in java
     {
         x=20;
@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String ss[]){
 
-        System.out.println();
+        System.out.println(x);
 
     }
 
