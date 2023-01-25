@@ -26,9 +26,15 @@ public class Main {
 
 
      /*   System.out.println("Again Enter your full name:");
-        String str2 = sc.nextLine();                   it will read complete line 
+        String str2 = sc.nextLine();                   it will read complete line
         System.out.println(str2);  */
 
+
+
+        //  it will work , would be executed infinitely
+        for(int i=0; true;){
+            System.out.println("This is going to print infinitely");
+        }
 
     }
 
