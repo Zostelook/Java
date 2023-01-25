@@ -43,14 +43,20 @@ public class Main {
 
 
 
-    public static void main(String[] ss){
+    public static void main(String[] ss)throws Exception{
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter an Integer Number :");
-        int n = sc.nextInt();
 
-       // checkNumberIsDivisibleByFive(n);
-        printDigitInLowerCaseEnglis(n);
+        // how we can take input via BufferedReader class
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Two digit  number");
+
+
+       int n = Integer.valueOf(br.readLine());
+       System.out.println(n);
+
+       checkNumberIsDivisibleByFive(n);
+       // printDigitInLowerCaseEnglis(n);
 
 
 
