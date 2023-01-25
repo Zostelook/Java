@@ -1,40 +1,60 @@
-import java.util.Scanner;
-
+import java.io.*;
+import java.util.*;
 public class Main {
 
+    // here is method to check a number is divisible by 5 or not
+    static void checkNumberIsDivisibleByFive(int num) {
+        int rem = num % 10;
+        if (rem == 5 || rem == 0) {
+            System.out.println("Number is divisible by 5");
+        } else {
+            System.out.println("Number is not divisible by five");
+        }
+    }
 
-   static   int x;
-     //   x=10;       we can't initialize like this in java
-    {
-        x=20;
+    // method print the lowercase eglish of a number if number is less than five else print Grater than 6
+    static void printDigitInLowerCaseEnglis(int n){
+        String str = Integer.toString(n);
+        for(int i=0; i<str.length(); i++){
+            char c = str.charAt(i);
+            if(c=='1'){
+                System.out.print("one");
+            }
+            if(c=='2'){
+                System.out.print("tow");
+            }
+
+            if(c=='3'){
+                System.out.print("three");
+            }
+            if(c=='4'){
+                System.out.print("four");
+            }
+            if(c=='5'){
+                System.out.print("five");
+            }else{
+                System.out.println("Grater then five");
+
+            }
+
+        }
     }
 
 
 
-    public static void main(String ss[]){
 
-        System.out.println(x);
-        System.out.println(("A"+"B"+'A'));
+    public static void main(String[] ss){
 
-       // difference between next() and nextLine();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter an Integer Number :");
+        int n = sc.nextInt();
 
-        Scanner sc = new Scanner(System.in);              // this object of scanner class
-
-        System.out.print("Enter your full name :");
-        String str1 = sc.next();                      // it will read only one word for example you gave input - Abhishek kumar , it will take only Abhishek
-        System.out.println(str1);
-
-
-     /*   System.out.println("Again Enter your full name:");
-        String str2 = sc.nextLine();                   it will read complete line
-        System.out.println(str2);  */
+       // checkNumberIsDivisibleByFive(n);
+        printDigitInLowerCaseEnglis(n);
 
 
 
-        //  it will work , would be executed infinitely
-        for(int i=0; true;){
-            System.out.println("This is going to print infinitely");
-        }
+
 
     }
 
