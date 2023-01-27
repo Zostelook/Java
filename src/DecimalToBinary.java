@@ -8,13 +8,18 @@ public class DecimalToBinary {
         {
             int remainder = decimalNumber%2;
 
+             reverse = reverse*10 +remainder;
 
             decimalNumber =decimalNumber/2;
 
         }
 
+        System.out.println(reverse);
 
 
+    }
+    public static void main(String []args){
+        convertDecimalToBinary(5);
     }
 
 }
