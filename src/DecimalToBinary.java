@@ -20,6 +20,15 @@ public class DecimalToBinary {
     }
     public static void main(String []args){
         convertDecimalToBinary(5);
+
+        /* if you wanna to take the input from the user you can write code like this
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter an Interger :");
+        int input = sc.nextInt();
+        convertDecimalToBinary(input);  */
+
     }
 
 }
