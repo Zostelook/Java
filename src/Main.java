@@ -55,9 +55,10 @@ public class Main {
        int n = Integer.valueOf(br.readLine());
        System.out.println(n);
 
-       checkNumberIsDivisibleByFive(n);
-       // printDigitInLowerCaseEnglis(n);
 
+       // These are the method call which take one argument
+       checkNumberIsDivisibleByFive(n);
+        printDigitInLowerCaseEnglis(n);
 
 
 
