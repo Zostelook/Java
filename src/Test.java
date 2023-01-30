@@ -1,9 +1,28 @@
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
 public class Test {
 
-    public static void main(String []ss){
 
-        int r =5;
-        double p = 2*Math.PI*r;
-        System.out.println(p);
+
+
+    public class Solution {
+        public static void main(String[] args) throws IOException {
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+            int N = Integer.parseInt(bufferedReader.readLine().trim());
+
+            bufferedReader.close();
+            for(int i =1; i<=N;i++){
+                System.out.println("2"+" "+"x"+" "+i+" "+"="+" "+(2*i));
+            }
+        }
     }
+
 }
