@@ -1,28 +1,33 @@
-
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
-
 public class Test {
 
+    public static void main(String []ss){
 
 
 
-    public class Solution {
-        public static void main(String[] args) throws IOException {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        Test2 t2 = new Test2();
+        Test3 t3 = new Test3();
+        t2.printSomething();
 
-            int N = Integer.parseInt(bufferedReader.readLine().trim());
+        Test2.displaySomething();
 
-            bufferedReader.close();
-            for(int i =1; i<=N;i++){
-                System.out.println("2"+" "+"x"+" "+i+" "+"="+" "+(2*i));
-            }
-        }
+
+
+
+    }
+}
+class Test2{
+    void printSomething(){
+        System.out.println("Something");
+
+
     }
 
+    static void displaySomething(){
+        System.out.println("Something");
+    }
+}
+class Test3{
+    void show(){
+        System.out.println("showing");
+    }
 }
