@@ -1,0 +1,60 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+class Main {
+    public static void main (String[] args) {
+        // Your code here
+
+         Scanner sc = new Scanner(System.in);
+        String n = sc.nextLine();
+        //System.out.println("n = " + n);
+        String str = sc.nextLine();
+        //System.out.println("Str = " + str);
+        
+        int count = 0; 
+        String ans = "";
+        String binary = "";
+        
+        for(int i = str.length()-1; i >= 0; i--){
+            if(count < 3){
+                binary += str.charAt(i);
+                count++;
+            }
+            if(count == 3){
+                int decimal = GetInteger(binary);
+                //System.out.println("Binary = " + binary + " Decimal = " + decimal);
+                ans += (char)(decimal+48);
+                binary = "";
+                count = 0;
+            }
+        }
+        if(count > 0){
+            int decimal = GetInteger(binary);
+            //System.out.println("Binary = " + binary + " Decimal = " + decimal);
+            ans += (char)(decimal+48);
+        }
+
+        System.out.println(Reverse(ans));
+    }
+
+    static int GetInteger(String binary){
+        binary = Reverse(binary);
+        int multiplier = 1;
+        int ans = 0;
+        for(int i = binary.length()-1; i>=0; i--){
+            int num = (int)binary.charAt(i)-48;
+            ans += num*multiplier;
+            multiplier = multiplier*2;
+        }
+        return ans;
+    }
+
+    static String Reverse(String str){
+        String res = "";
+        for(int i = str.length()-1; i >=0; i--){
+            res += str.charAt(i);
+        }
+        return res;
+    }
+    
+}
