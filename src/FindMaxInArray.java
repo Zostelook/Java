@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TakeInput {
+public class FindMaxInArray {
 
     static void takeInput(){
         int result =0;
@@ -15,6 +15,21 @@ public class TakeInput {
         System.out.println(result);
     }
     public static void main(String[]ss){
-        takeInput();
+      //  takeInput();
+
+       int[] arr = new int[]{5,6,9,2,-8,34,-7};
+       int max = arr[0];
+       for(int i=0; i<arr.length; i++){
+           if(arr[i]>max){
+               max =arr[i];
+           }
+       }
+       System.out.println(max);
+
+
+        System.out.println();
+
+
+
     }
 }
