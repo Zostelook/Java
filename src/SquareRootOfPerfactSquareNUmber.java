@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class SquareRootOfPerfactSquareNUmber {
@@ -12,13 +15,28 @@ public class SquareRootOfPerfactSquareNUmber {
         }
         System.out.println(count);
     }
-    public static void main(String[]ss){
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[]ss)throws IOException {
+      //  Scanner sc = new Scanner(System.in);
       //  System.out.print("Enter a positive number:");
       //  int input = sc.nextInt();
       //  squareRootOfNUmber(input);
 
-        int [] arr = new int[5];
-        System.out.println(arr);
+
+        // here you can see the array size is zero then it will print the arr.length is zero , bro it is not a compilation errar
+        int [] arr = new int[0];
+
+        System.out.println(arr.length);
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nEnter a Number :");
+        int n = Integer.parseInt(br.readLine());
+        squareRootOfNUmber(n);
+
+
+        System.out.print("Entr Your name :");
+        String str = br.readLine();
+        System.out.println(str);
+
+
     }
 }

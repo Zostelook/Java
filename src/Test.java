@@ -4,11 +4,6 @@ public class Test {
 
 
 
-        Test2 t2 = new Test2();
-        Test3 t3 = new Test3();
-        t2.printSomething();
-
-        Test2.displaySomething();
 
 
 
