@@ -1,0 +1,18 @@
+import java.util.*;
+class Main{
+
+    static void kthBitIsSetBit(int n, int k){
+      
+       if((n&(1<<(k-1)))!=0){
+           System.out.println("Set bit");
+       }else{
+           System.out.println("Not Set Bit");
+       }
+     
+    }
+
+    public static void main(String[]ss){
+       
+      kthBitIsSetBit(8,4);
+    }
+}
