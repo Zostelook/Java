@@ -1,0 +1,23 @@
+import java.util.*;
+class Main{
+
+    static void kthBitIsSetBit(int n, int k){
+      
+       int x =1;
+       for(int i=1; i<k; i++){
+           x = x*2;
+       }
+
+       if((n&x)!=0){
+           System.out.println("Kth bit is set bit");
+       }else{
+           System.out.println("kth bit is not set bit");
+       }
+     
+    }
+
+    public static void main(String[]ss){
+       
+      kthBitIsSetBit(8,4);
+    }
+}
