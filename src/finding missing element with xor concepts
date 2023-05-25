@@ -1,0 +1,21 @@
+import java.util.*;
+class Main{
+
+    static int missingNumber(int[]arr, int n){
+        int xor = arr[0];
+        for(int i=1; i<arr.length; i++){
+            xor = xor^arr[i];
+        }
+
+        for(int i=1; i<=n; i++){
+            xor = xor^i;
+        }
+        return xor;
+    }
+
+    public static void main(String[]ss){
+      int[]arr = {5,4,3,2,1,7,8,9};
+
+      System.out.println(missingNumber(arr,9));
+    }
+}
