@@ -1,0 +1,22 @@
+import java.util.*;
+class Main{
+
+    static String decimalToBinary(int n){
+        Stack<Integer> st = new Stack<>();
+        String binary = "";
+
+        while(n!=0){
+            st.push(n%2);
+            n = n/2;
+        }
+        while(!st.isEmpty()){
+            binary = binary + st.pop();
+        }
+
+        return binary;
+    }
+    public static void main(String[]ss){
+        System.out.println(decimalToBinary(200234701));
+        // you can also use predefine method for decimalToBinary
+    }
+}
